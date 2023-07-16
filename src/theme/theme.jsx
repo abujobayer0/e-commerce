@@ -15,7 +15,7 @@ const theme = createTheme({
         dark: '#B71C1C',
       },
      font:{
-        primary:"#fff",secondary:"#000"
+        primary:"#fff",secondary:"#000",olive:"#94B49F"
      },
     },
   });
