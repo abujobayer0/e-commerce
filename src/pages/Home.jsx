@@ -1,11 +1,12 @@
-import { Button } from "@mui/material";
+import { Button, useTheme } from "@mui/material";
 
 
 const Home = () => {
+    const theme=useTheme()
     return (
         <div>
             This is home
-            <Button variant="contained" >Home Button</Button>
+            <Button variant="contained" sx={{color:theme.palette.font.primary}} >Home Button</Button>
         </div>
     );
 };
