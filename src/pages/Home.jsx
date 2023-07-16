@@ -1,5 +1,6 @@
 
 import { SubNavBar,NavBar, } from "../components";
+import { Banner, Trend } from "../shared";
 
 const Home = () => {
 
@@ -7,7 +8,8 @@ const Home = () => {
       <div>
       <SubNavBar/>
       <NavBar/>
-     
+      <Banner/>
+      <Trend/>
       </div>
     );
 };
