@@ -8,11 +8,7 @@ const theme = createTheme({
       secondary: {
         main: '#ECB390', 
       },
-typography:{
-    p:14,
-    headline:25,subHeadline:18
 
-},
       customColor: {
         light: '#CEE5D0',
         main: '#F44336',
