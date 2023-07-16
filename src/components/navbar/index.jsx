@@ -1,12 +1,16 @@
 import { Menu, Person, ShoppingCart, } from "@mui/icons-material";
 import { Box,    IconButton,    Typography, useMediaQuery, useTheme } from "@mui/material";
 import { useState } from "react";
-
+import DrawerComp from "../drawerComp";
 const NavBar = () => {
     const theme =useTheme()
     const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.up('md'));
     const [searchValue, setSearchValue] = useState('');
+    const [open, setOpen] = useState(false);
 
+    const toggleDrawer = () => {
+   setOpen(!open);
+    };
     const handleSearchChange = (event) => {
       setSearchValue(event.target.value);
     };
@@ -19,8 +23,8 @@ const NavBar = () => {
     return (
         <Box sx={{background:theme.palette.primary.main,gap:{xs:2,md:10},padding:{xs:"5px 10px",md:"10px 15px"},display:"flex",justifyContent:"space-between",alignItems:"center"}}>
         <Box>
-            <Typography variant={isMediumScreen ? 'h3' : 'h4'} sx={{color:theme.palette.font.primary}}>
-            Hello
+            <Typography variant={isMediumScreen ? 'h4' : 'h4'} sx={{color:theme.palette.font.primary}}>
+            HELLO
             </Typography>
             </Box>
             <div className="relative w-full text-gray-600">
@@ -56,17 +60,15 @@ const NavBar = () => {
     </div>
         <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:2}}>
             <IconButton>
-
             <ShoppingCart sx={{color:theme.palette.font.primary}}/>
             </IconButton>
             <IconButton sx={{display:{xs:"none",md:"flex"}}}>
-
         <Person sx={{color:theme.palette.font.primary}}/>
             </IconButton>
-            <IconButton>
-
+            <IconButton  sx={{display:{xs:"flex",md:"none"}}}onClick={toggleDrawer}>
         <Menu sx={{color:theme.palette.font.primary}}/>
             </IconButton>
+            <DrawerComp open={open} toggleDrawer={toggleDrawer}/>
         </Box>
         </Box>
     );
