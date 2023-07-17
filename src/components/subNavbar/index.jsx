@@ -10,8 +10,8 @@ const SubNavBar = () => {
   };
 
   return (
-    <div className="w-full hidden lg:block">
-      <div className="flex flex-row gap-10 justify-end py-2">
+    <div className="w-full hidden md:block">
+      <div className="flex flex-row gap-10 justify-end my-2 pe-10">
         <Typography
           variant="p"
           sx={{
@@ -22,6 +22,17 @@ const SubNavBar = () => {
           onClick={() => handleLinkClick("home")}
         >
           Home
+        </Typography>
+        <Typography
+          variant="p"
+          sx={{
+            color: activeLink === "about" ? "#94B49F" : theme.palette.font.secondary,
+            "&:hover": { color: "#94B49F" },
+            borderBottom: activeLink === "about" ? "2px solid #94B49F" : "none", // Add bottom border for active link
+          }}
+          onClick={() => handleLinkClick("about")}
+        >
+          About
         </Typography>
         <Typography
           variant="p"

@@ -16,13 +16,19 @@ function DrawerComp({toggleDrawer,open}) {
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <ListItemText primary="Join Us" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
           <ListItemText primary="Contuct Us" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="About Us" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
