@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Box, Typography, useMediaQuery,  } from "@mui/material";
+import { Box, useMediaQuery,  } from "@mui/material";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -11,7 +11,7 @@ const Banner = () => {
     const theme=useTheme()
     return (
         <Box sx={{display:"flex",justifyContent:{xs:"center",md:"space-between"},alignItems:"center",flexDirection:{xs:"column",md:"row"}, background:theme.palette.customColor.white,minHeight:{xs:"400px",md:"500px"}}}>  
-           <Box sx={{width:{xs:"100%",md:"50%"}}}> 
+          <Box sx={{width:{xs:"100%",md:"50%"}}}> 
     <Swiper
       effect={'coverflow'}
       grabCursor={true}
@@ -58,12 +58,12 @@ const Banner = () => {
         <img src="https://images.pexels.com/photos/8483673/pexels-photo-8483673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 9" />
       </SwiperSlide>
     </Swiper></Box>
-    <div style={{backgroundImage:"url(https://i.ibb.co/zVK36sv/png-transparent-angle-veil-art-veil-wing-thumbnail-removebg-preview.png)",backgroundRepeat:"no-repeat",backgroundPosition:`${isMediumScreen?"center right":"right top"}`}} 
+    <div style={{backgroundRepeat:"no-repeat",backgroundPosition:`${isMediumScreen?"center right":"right top"}`}} 
     className=" py-10 relative   mx-4 md:mx-0 md:px-0 text-center" >
-      <h1 className="text-5xl bg-transparent md:text-6xl font-bold mb-4 tracking-wide">
+      <h1 style={{color:theme.palette.font.olive}} className="text-5xl  bg-transparent  md:text-6xl font-bold mb-4 tracking-wide">
         Shop-to-Door Fast Product Delivery
       </h1>
-      <h2 className="text-xl bg-transparent md:text-2xl italic mb-4 opacity-75">
+      <h2 className="text-xl  bg-transparent md:text-2xl   mb-4 opacity-75">
         Your One-Stop E-Commerce Solution
 
       </h2>

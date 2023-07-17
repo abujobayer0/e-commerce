@@ -11,6 +11,7 @@ const theme = createTheme({
 
       customColor: {
         light: '#CEE5D0',
+        buttonBg:"#CEE5D0",
         main: '#F44336',
         dark: '#B71C1C',
         white:"#fff",black:"#000"
