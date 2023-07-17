@@ -1,3 +1,5 @@
 import Banner from "./banner";
 import CategorySection from "./category";
-export {Banner,CategorySection}
+import PopularProducts from "./products";
+import PopularSellers from "./popularSellers";
+export { Banner, CategorySection, PopularProducts, PopularSellers };
