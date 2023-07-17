@@ -16,3 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.title-before-border::before{
+content: "";
+width: 40px;
+height: 5px;
+background-color: #94B49F;
+margin: 0px 0 10px 0;
+}

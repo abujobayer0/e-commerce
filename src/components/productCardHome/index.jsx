@@ -4,17 +4,19 @@ const ProductCardHome = () => {
   const theme = useTheme();
   return (
     <div className="text-center">
-      <div className="bg-white w-64 m-5 py-5 transition shadow hover:shadow-lg border">
-        <img
-          src="https://i1.wp.com/www.mobilebd.co/wp-content/uploads/2022/05/Samsung-Galaxy-J10-Official-Image.png?fit=500%2C500&ssl=1"
-          className="w-full transition scale-[95%] hover:scale-100 delay-300"
-        />
+      <div className="bg-white w-64 m-5 pb-5 transition shadow hover:shadow-lg border">
+        <div className="w-full h-52">
+          <img
+            src="https://media.istockphoto.com/id/93355119/photo/indian-saris.jpg?s=612x612&w=0&k=20&c=afmfiTJg0VAmIY6P_TJ_JYsTfGhUdevv18WXQRUZ8NQ="
+            className="w-full h-52 transition scale-[95%] hover:scale-100 ease-in-out"
+          />
+        </div>
         <Typography
           variant="h6"
           sx={{ color: theme.palette.font.product.title }}
           className="pt-4"
         >
-          Samsung Gallaxy J10
+          Jamdani Saree
         </Typography>
         <p className="mt-1">
           <Typography
@@ -25,7 +27,7 @@ const ProductCardHome = () => {
           </Typography>
         </p>
         <p className="mt-3">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-md transition-all hover:shadow-md scale-[95%] hover:scale-100">
+          <button className="bg-olive-600 text-white px-4 py-2 rounded-md transition-all hover:shadow-md scale-[95%] hover:scale-100">
             Add to Cart
           </button>
         </p>

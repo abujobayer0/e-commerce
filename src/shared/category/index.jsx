@@ -6,12 +6,12 @@ const Trend = () => {
   return (
     <Box sx={{ background: theme.palette.customColor.white, mt: 2, py: 2 }}>
       <div className="flex justify-center items-center">
-        <div className="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
+        <div className="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-[15px] 2xl:px-0 w-full">
           <div className="flex flex-col jusitfy-center items-center space-y-10">
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex title-before-border flex-col justify-start w-full text-left items-start ">
               <h1
                 style={{ color: theme.palette.font.olive }}
-                className="text-3xl xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white"
+                className="text-3xl text-left xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white"
               >
                 Shop By Category
               </h1>
