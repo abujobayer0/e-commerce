@@ -6,9 +6,11 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "./styles.css";
+
 const Banner = () => {
   const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
   const theme = useTheme();
+
   return (
     <Box
       sx={{
@@ -98,22 +100,20 @@ const Banner = () => {
       <div
         style={{
           backgroundRepeat: "no-repeat",
-          backgroundPosition: `${
-            isMediumScreen ? "center right" : "right top"
-          }`,
+          backgroundPosition: `${isMediumScreen ? "center right" : "right top"}`,
         }}
-        className=" py-10 relative   mx-4 md:mx-0 md:px-0 text-center"
+        className="py-10 relative mx-4 md:mx-0 md:px-0 text-center"
       >
         <h1
           style={{ color: theme.palette.font.olive }}
-          className="text-5xl  bg-transparent  md:text-6xl font-bold mb-4 tracking-wide"
+          className="text-5xl bg-transparent md:text-6xl font-bold mb-4 tracking-wide"
         >
           Shop-to-Door Fast Product Delivery
         </h1>
-        <h2 className="text-xl  bg-transparent md:text-2xl   mb-4 opacity-75">
+        <h2 className="text-xl bg-transparent md:text-2xl mb-4 opacity-75">
           Your One-Stop E-Commerce Solution
         </h2>
-        <p className=" text-sm md:text-md bg-transparent md:text-xl mx-auto max-w-xl">
+        <p className="text-sm md:text-md bg-transparent md:text-xl mx-auto max-w-xl">
           Experience the convenience of quick and reliable delivery services
           right at your doorstep. Shop with confidence and get your favorite
           products delivered in no time.
