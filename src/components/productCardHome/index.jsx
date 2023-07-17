@@ -7,11 +7,11 @@ const ProductCardHome = ({ img, title }) => {
   return (
     <div className="mx-auto text-left w-full">
       <div className="bg-white w-full md:w-full  pb-5 transition shadow hover:shadow-lg border">
-        <div className="w-full h-60 md:h-52">
+        <div className="w-full h-60 overflow-hidden lg:h-52">
           <img
             src={img}
             alt="product"
-            className="w-full h-60 md:h-52 duration-150 transition scale-[95%] hover:scale-100 ease-in-out"
+            className="w-full  object-fill md:object-cover lg:object-fill h-60 lg:h-52 duration-150 transition scale-[95%] hover:scale-100 ease-in-out"
           />
         </div>
         <Typography
