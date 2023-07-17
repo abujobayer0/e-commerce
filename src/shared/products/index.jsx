@@ -23,10 +23,12 @@ const PopularProducts = () => {
         sx={{
           display: "grid",
           gridTemplateColumns: {
+            xl: "repeat(5, 1fr)",
             lg: "repeat(4, 1fr)",
             md: "repeat(3, 1fr)",
-            xs: "repeat(1, 1fr)",
+            xs: "repeat(2, 1fr)",
           },
+          gridAutoRows: "1fr",
           gap: 2,
           width: "100%",
           justifyItems: "center",
@@ -53,6 +55,12 @@ const PopularProducts = () => {
             "https://www.koskii.com/cdn/shop/products/koskii-maroon-swarovski-semi-crepe-designer-salwar-suit-ssus0017043_maroon_1.jpg?v=1633862838"
           }
           title={"Salwar Kamej"}
+        />
+        <ProductCardHome
+          img={
+            "https://parlez.co.uk/cdn/shop/products/PARHS23-PRODUCTPHOTOGRAPHY-T-SHIRTS-HULLT-SHIRT-DUSTYAQUA-1_1080x.jpg?v=1680539963"
+          }
+          title={"T Shirt For Men"}
         />
         <ProductCardHome
           img={

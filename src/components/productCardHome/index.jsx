@@ -6,7 +6,7 @@ const ProductCardHome = ({ img, title }) => {
   const theme = useTheme();
   return (
     <div className="mx-auto text-left w-full">
-      <div className="bg-white w-full md:w-64  pb-5 transition shadow hover:shadow-lg border">
+      <div className="bg-white w-full md:w-full  pb-5 transition shadow hover:shadow-lg border">
         <div className="w-full h-60 md:h-52">
           <img
             src={img}
@@ -16,7 +16,12 @@ const ProductCardHome = ({ img, title }) => {
         </div>
         <Typography
           variant="h6"
-          sx={{ color: theme.palette.font.product.title, px: 2, pt: 1 }}
+          sx={{
+            color: theme.palette.font.product.title,
+            px: 2,
+            pt: 1,
+            fontWeight: 600,
+          }}
         >
           {title}
         </Typography>
@@ -41,10 +46,18 @@ const ProductCardHome = ({ img, title }) => {
             ৳‎1,000
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", mt: 1, alignItems: "center" }}>
-          <p className=" px-4">
-            <AddToCartButton />
-          </p>
+        <Box
+          sx={{
+            display: "flex",
+            px: 2,
+            mt: 1,
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 1,
+          }}
+        >
+          <AddToCartButton />
+
           <IconButton>
             <RemoveRedEye />
           </IconButton>

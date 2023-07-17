@@ -1,10 +1,13 @@
 import { ShoppingCart } from "@mui/icons-material";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 const AddToCartButton = () => {
   return (
     <Button variant="contained" sx={{ color: "#fff" }}>
-      Add to Cart <ShoppingCart />
+      <Typography variant="p">
+        Add to Cart
+        <ShoppingCart />
+      </Typography>
     </Button>
   );
 };
