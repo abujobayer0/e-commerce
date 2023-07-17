@@ -6,6 +6,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "./styles.css";
+import { SecondaryButton } from "../../components";
 
 const Banner = () => {
   const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
@@ -46,54 +47,59 @@ const Banner = () => {
               src="https://images.unsplash.com/photo-1610030469839-f909584b43f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="Nature 1"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.unsplash.com/photo-1597983073512-90bd150e19f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="Nature 2"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="Nature 3"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/8364116/pexels-photo-8364116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Nature 4"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="https://images.pexels.com/photos/2850487/pexels-photo-2850487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Nature 5"
-            />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/9218538/pexels-photo-9218538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Nature 6"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Nature 7"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/2060241/pexels-photo-2060241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Nature 8"
             />
+            <SecondaryButton />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/8483673/pexels-photo-8483673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Nature 9"
             />
+            <SecondaryButton />
           </SwiperSlide>
         </Swiper>
       </Box>
