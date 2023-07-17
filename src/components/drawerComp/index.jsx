@@ -16,6 +16,30 @@ function DrawerComp({toggleDrawer,open}) {
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Contuct Us" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Order" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Products" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
           <ListItemText primary="Inbox" />
         </ListItem>
         <ListItem button>
@@ -23,6 +47,12 @@ function DrawerComp({toggleDrawer,open}) {
             <MailIcon />
           </ListItemIcon>
           <ListItemText primary="Mail" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <MailIcon />
+          </ListItemIcon>
+          <ListItemText primary="Login | Sign Up" />
         </ListItem>
       </List>
     </Drawer>
