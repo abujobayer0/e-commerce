@@ -15,84 +15,48 @@ const SubNavBar = () => {
         <Typography
           variant="p"
           sx={{
-            color: activeLink === "home" ? "#94B49F" : theme.palette.font.secondary,
-            "&:hover": { color: "#94B49F" },
-            borderBottom: activeLink === "home" ? "2px solid #94B49F" : "none", // Add bottom border for active link
-          }}
-          onClick={() => handleLinkClick("home")}
-        >
-          Home
-        </Typography>
-        <Typography
-          variant="p"
-          sx={{
-            color: activeLink === "about" ? "#94B49F" : theme.palette.font.secondary,
+            color:
+              activeLink === "about" ? "#94B49F" : theme.palette.font.secondary,
             "&:hover": { color: "#94B49F" },
             borderBottom: activeLink === "about" ? "2px solid #94B49F" : "none", // Add bottom border for active link
           }}
           onClick={() => handleLinkClick("about")}
         >
-          About
+          About Us
         </Typography>
         <Typography
           variant="p"
           sx={{
-            color: activeLink === "contact-us" ? "#94B49F" : theme.palette.font.secondary,
+            color:
+              activeLink === "contact-us"
+                ? "#94B49F"
+                : theme.palette.font.secondary,
             "&:hover": { color: "#94B49F" },
-            borderBottom: activeLink === "contact-us" ? "2px solid #94B49F" : "none",
+            borderBottom:
+              activeLink === "contact-us" ? "2px solid #94B49F" : "none",
           }}
           onClick={() => handleLinkClick("contact-us")}
         >
-          Contuct Us
+          Contact Us
         </Typography>
         <Typography
           variant="p"
           sx={{
-            color: activeLink === "order" ? "#94B49F" : theme.palette.font.secondary,
+            color:
+              activeLink === "order" ? "#94B49F" : theme.palette.font.secondary,
             "&:hover": { color: "#94B49F" },
             borderBottom: activeLink === "order" ? "2px solid #94B49F" : "none",
           }}
           onClick={() => handleLinkClick("order")}
         >
-          Order
+          Your Orders
         </Typography>
+
         <Typography
           variant="p"
           sx={{
-            color: activeLink === "products" ? "#94B49F" : theme.palette.font.secondary,
-            "&:hover": { color: "#94B49F" },
-            borderBottom: activeLink === "products" ? "2px solid #94B49F" : "none",
-          }}
-          onClick={() => handleLinkClick("products")}
-        >
-          Products
-        </Typography>
-        <Typography
-          variant="p"
-          sx={{
-            color: activeLink === "inbox" ? "#94B49F" : theme.palette.font.secondary,
-            "&:hover": { color: "#94B49F" },
-            borderBottom: activeLink === "inbox" ? "2px solid #94B49F" : "none",
-          }}
-          onClick={() => handleLinkClick("inbox")}
-        >
-          Inbox
-        </Typography>
-        <Typography
-          variant="p"
-          sx={{
-            color: activeLink === "mail" ? "#94B49F" : theme.palette.font.secondary,
-            "&:hover": { color: "#94B49F" },
-            borderBottom: activeLink === "mail" ? "2px solid #94B49F" : "none",
-          }}
-          onClick={() => handleLinkClick("mail")}
-        >
-          Mail
-        </Typography>
-        <Typography
-          variant="p"
-          sx={{
-            color: activeLink === "login" ? "#94B49F" : theme.palette.font.secondary,
+            color:
+              activeLink === "login" ? "#94B49F" : theme.palette.font.secondary,
             "&:hover": { color: "#94B49F" },
             borderBottom: activeLink === "login" ? "2px solid #94B49F" : "none",
           }}
@@ -106,4 +70,3 @@ const SubNavBar = () => {
 };
 
 export default SubNavBar;
-

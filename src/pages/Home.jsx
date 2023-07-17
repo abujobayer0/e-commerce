@@ -1,19 +1,18 @@
-
-import { SubNavBar,NavBar, } from "../components";
+import { SubNavBar, NavBar, Head } from "../components";
 import { Banner, CategorySection } from "../shared";
 import PopularProducts from "../shared/products";
 
 const Home = () => {
-
-    return (
-      <div>
-      <SubNavBar/>
-      <NavBar/>
-      <Banner/>
+  return (
+    <div>
+      <SubNavBar />
+      <Head />
+      <NavBar />
+      <Banner />
       <CategorySection />
-     <PopularProducts/>
-      </div>
-    );
+      <PopularProducts />
+    </div>
+  );
 };
 
-export default Home; 
+export default Home;
