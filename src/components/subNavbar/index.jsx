@@ -10,8 +10,8 @@ const SubNavBar = () => {
   };
 
   return (
-    <div className="w-full">
-      <div className="flex flex-row gap-10 justify-end py-3 font-medium">
+    <div className="w-full hidden lg:block">
+      <div className="flex flex-row gap-10 justify-end py-2">
         <Typography
           variant="p"
           sx={{
