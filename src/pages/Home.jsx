@@ -1,6 +1,7 @@
 
 import { SubNavBar,NavBar, } from "../components";
-import { Banner, Trend } from "../shared";
+import { Banner, CategorySection } from "../shared";
+import PopularProducts from "../shared/products";
 
 const Home = () => {
 
@@ -9,7 +10,8 @@ const Home = () => {
       <SubNavBar/>
       <NavBar/>
       <Banner/>
-      <Trend/>
+      <CategorySection />
+     <PopularProducts/>
       </div>
     );
 };

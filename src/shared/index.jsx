@@ -1,3 +1,3 @@
 import Banner from "./banner";
-import Trend from "./trend";
-export {Banner,Trend}
+import CategorySection from "./category";
+export {Banner,CategorySection}

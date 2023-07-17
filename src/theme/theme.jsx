@@ -17,6 +17,7 @@ const theme = createTheme({
         white:"#fff",black:"#000"
       },
      font:{
+      product:{title:"#000",price:"#66b180"},
         primary:"#fff",secondary:"#000",olive:"#94B49F"
      },
     },
