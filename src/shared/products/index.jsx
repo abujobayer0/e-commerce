@@ -4,11 +4,17 @@ import { ProductCardHome } from "../../components";
 const PopularProducts = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ background: theme.palette.customColor.white, py: 2 }}>
-      <div className="flex flex-col justify-center py-12 items-center ">
+    <Box
+      sx={{
+        background: theme.palette.customColor.white,
+        px: { xs: "10px", md: "15px" },
+        py: 2,
+      }}
+    >
+      <div className="flex flex-col title-before-border justify-start py-12 items-start ">
         <h1
           style={{ color: theme.palette.font.olive }}
-          className="text-3xl xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white"
+          className="text-3xl  xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white"
         >
           Popular Products
         </h1>
