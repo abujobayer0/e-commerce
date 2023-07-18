@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SellerPanel from "./pages/SellerPanel";
 import { SellerProductAdd } from "./components";
 import SignUpLoginForm from "./pages/UserRegistration";
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           }
         ></Route>
         <Route path="/login" element={<SignUpLoginForm />}></Route>
+        <Route path="/products" element={<ProductsPage />}></Route>
       </Routes>
     </>
   );

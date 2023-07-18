@@ -1,0 +1,26 @@
+/* carousel-styles.css */
+/* Example styles for the arrow buttons */
+.carousel-root .react-multiple-carousel__arrow {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .carousel-root .react-multiple-carousel__arrow:hover {
+    background-color: #ddd;
+  }
+  
+  .carousel-root .react-multiple-carousel__arrow--left {
+    left: 10px; /* Adjust the position of the left arrow */
+  }
+  
+  .carousel-root .react-multiple-carousel__arrow--right {
+    right: 10px; /* Adjust the position of the right arrow */
+  }
+  

@@ -5,6 +5,7 @@ import {
   PopularProducts,
   PopularSellers,
 } from "../shared";
+import AllProductsSlide from "./ProductsPage";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Banner />
       <CategorySection />
       <PopularProducts />
+      <AllProductsSlide />
       <PopularSellers />
     </div>
   );
