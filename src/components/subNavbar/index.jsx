@@ -12,7 +12,7 @@ const SubNavBar = () => {
 
   return (
     <div className="w-full hidden md:block">
-      <div className="flex flex-row gap-10 justify-end my-2 pe-10">
+      <div className="flex flex-row gap-10 justify-end my-2 px-10">
         <Typography
           variant="p"
           sx={{

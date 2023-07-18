@@ -18,7 +18,7 @@ const SellerPanel = ({ children }) => {
           py: 1,
           width: "100%",
           background: theme.palette.primary.main,
-          px: "15px",
+          px: "25px",
           justifyContent: "space-between",
           alignItems: "center",
         }}
@@ -30,7 +30,7 @@ const SellerPanel = ({ children }) => {
       </Box>
       <Box
         sx={{
-          px: "15px",
+          px: "25px",
           py: 2,
         }}
       >

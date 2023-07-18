@@ -7,7 +7,7 @@ const PopularProducts = () => {
     <Box
       sx={{
         background: theme.palette.customColor.white,
-        px: { xs: "10px", md: "15px" },
+        px: { xs: "20px", md: "25px" },
         py: 2,
       }}
     >

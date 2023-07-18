@@ -31,7 +31,7 @@ const NavBar = () => {
       sx={{
         background: theme.palette.primary.main,
         gap: { xs: 2, md: 10 },
-        padding: { xs: "5px 10px", md: "10px 15px" },
+        padding: { xs: "5px 20px", md: "10px 25px" },
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -50,7 +50,7 @@ const NavBar = () => {
           type="search"
           name="search"
           placeholder="Search"
-          className="bg-white h-10 px-5 pr-10  w-full  text-sm focus:outline-none"
+          className="bg-white h-10 px-10 pr-10  w-full  text-sm focus:outline-none"
           value={searchValue}
           onChange={handleSearchChange}
         />
