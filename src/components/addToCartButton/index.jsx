@@ -7,9 +7,12 @@ const AddToCartButton = () => {
       variant="contained"
       sx={{ color: "#fff", fontSize: { xs: 12, md: 15 } }}
     >
-      <Typography variant="p">
-        Add to Cart
-        <ShoppingCart sx={{ fontSize: { xs: 20, md: 25 } }} />
+      <Typography variant="p" sx={{ display: "flex" }}>
+        <Typography sx={{ display: { xs: "none", sm: "block" } }}>
+          Add to Cart
+        </Typography>
+
+        <ShoppingCart sx={{ fontSize: { xs: 18, md: 25 } }} />
       </Typography>
     </Button>
   );

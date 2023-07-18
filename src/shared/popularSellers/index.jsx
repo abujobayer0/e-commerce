@@ -27,7 +27,7 @@ const PopularSellers = () => {
             lg: "repeat(4, 300px)",
             md: "repeat(3, 300px)",
             sm: "repeat(2, 300px)",
-            xs: "repeat(2, 200px)",
+            xs: "repeat(2, 50%)",
           },
 
           gap: { xs: 1, sm: 2 },

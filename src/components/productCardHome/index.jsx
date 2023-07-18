@@ -21,15 +21,24 @@ const ProductCardHome = ({ img, title }) => {
             px: 2,
             pt: 1,
             fontWeight: 600,
+            fontSize: { xs: 16, md: 20 },
           }}
         >
           {title}
         </Typography>
         <Box sx={{ display: "flex", alignItems: "center", px: 2 }}>
-          <Typography>Price:</Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: 12, md: 16 },
+              color: theme.palette.font.product.secondary,
+            }}
+          >
+            Price:
+          </Typography>
           <Typography
             variant="span"
             sx={{
+              fontSize: { xs: 12, md: 16 },
               color: theme.palette.font.product.secondary,
             }}
             className="px-2 line-through "
@@ -39,6 +48,7 @@ const ProductCardHome = ({ img, title }) => {
           <Typography
             variant="span"
             sx={{
+              fontSize: { xs: 12, md: 16 },
               color: theme.palette.font.product.price,
             }}
             className="px-2"

@@ -21,6 +21,7 @@ const PopularShops = ({ img, title }) => {
             px: 2,
             pt: 1,
             fontWeight: 600,
+            fontSize: { xs: 16, md: 20 },
           }}
         >
           {title}
@@ -29,13 +30,18 @@ const PopularShops = ({ img, title }) => {
           <IconButton>
             <LocationCity />
           </IconButton>
-          <Typography>Dhaka,Bangladesh</Typography>
+          <Typography sx={{ fontSize: { xs: 12, md: 16 } }}>
+            Dhaka,Bangladesh
+          </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", px: 2 }}>
           <IconButton>
             <ArrowRightAlt />
           </IconButton>
-          <Typography>Visit Our Shop</Typography>
+          <Typography sx={{ fontSize: { xs: 12, md: 14 } }}>
+            {" "}
+            Visit Our Shop
+          </Typography>
         </Box>
       </div>
     </div>
