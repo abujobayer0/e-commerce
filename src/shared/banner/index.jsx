@@ -110,7 +110,7 @@ const Banner = () => {
             isMediumScreen ? "center right" : "right top"
           }`,
         }}
-        className="py-10  relative mx-4 md:mx-0 md:px-2 text-center"
+        className="pb-10 md:pb-0 md:py-10  relative mx-4 md:mx-0 md:px-2 text-center"
       >
         <h1
           style={{ color: theme.palette.font.olive }}

@@ -1,54 +1,78 @@
-import Divider from "@mui/material/Divider";
-import Paper from "@mui/material/Paper";
-import MenuList from "@mui/material/MenuList";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Typography from "@mui/material/Typography";
-import ContentCut from "@mui/icons-material/ContentCut";
-import ContentCopy from "@mui/icons-material/ContentCopy";
-import ContentPaste from "@mui/icons-material/ContentPaste";
-import Cloud from "@mui/icons-material/Cloud";
+import { useState } from "react";
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Divider,
+  IconButton,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
+import SettingsIcon from "@mui/icons-material/Settings";
+import { Home } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
-export default function SellerPanelSideBar() {
-  return (
-    <Paper sx={{ width: 320, maxWidth: "100%" }}>
-      <MenuList>
-        <MenuItem>
+const SellerPanelSideBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const list = () => (
+    <div role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer}>
+      <List sx={{ width: 300 }}>
+        <Link to={"/"}>
+          <ListItem button>
+            <ListItemIcon>
+              <Home />
+            </ListItemIcon>
+            <ListItemText primary="Home" />
+          </ListItem>
+        </Link>
+        <ListItem button>
           <ListItemIcon>
-            <ContentCut fontSize="small" />
+            <DashboardIcon />
           </ListItemIcon>
-          <ListItemText>Cut</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘X
-          </Typography>
-        </MenuItem>
-        <MenuItem>
+          <ListItemText primary="Dashboard" />
+        </ListItem>
+        <ListItem button>
           <ListItemIcon>
-            <ContentCopy fontSize="small" />
+            <ConfirmationNumberIcon />
           </ListItemIcon>
-          <ListItemText>Copy</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘C
-          </Typography>
-        </MenuItem>
-        <MenuItem>
+          <ListItemText primary="Tickets" />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem button>
           <ListItemIcon>
-            <ContentPaste fontSize="small" />
+            <SettingsIcon />
           </ListItemIcon>
-          <ListItemText>Paste</ListItemText>
-          <Typography variant="body2" color="text.secondary">
-            ⌘V
-          </Typography>
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <ListItemIcon>
-            <Cloud fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Web Clipboard</ListItemText>
-        </MenuItem>
-      </MenuList>
-    </Paper>
+          <ListItemText primary="Settings" />
+        </ListItem>
+      </List>
+    </div>
   );
-}
+
+  return (
+    <>
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        edge="start"
+        onClick={toggleDrawer}
+      >
+        <MenuIcon />
+      </IconButton>
+      <Drawer anchor="left" open={isOpen} onClose={toggleDrawer}>
+        {list()}
+      </Drawer>
+    </>
+  );
+};
+
+export default SellerPanelSideBar;

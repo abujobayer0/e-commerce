@@ -1,5 +1,6 @@
 import { useTheme, Typography } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SubNavBar = () => {
   const theme = useTheme();
@@ -39,6 +40,23 @@ const SubNavBar = () => {
         >
           Contact Us
         </Typography>
+        <Link to={"/seller"}>
+          <Typography
+            variant="p"
+            sx={{
+              color:
+                activeLink === "contact-us"
+                  ? "#94B49F"
+                  : theme.palette.font.secondary,
+              "&:hover": { color: "#94B49F" },
+              borderBottom:
+                activeLink === "contact-us" ? "2px solid #94B49F" : "none",
+            }}
+            onClick={() => handleLinkClick("contact-us")}
+          >
+            Seller Panel
+          </Typography>
+        </Link>
         <Typography
           variant="p"
           sx={{

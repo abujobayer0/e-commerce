@@ -1,10 +1,42 @@
+import { Box, Typography, useTheme } from "@mui/material";
 import { SellerPanelSideBar } from "../components";
 
-const SellerPanel = () => {
+const SellerPanel = ({ children }) => {
+  const theme = useTheme();
   return (
-    <div>
-      <SellerPanelSideBar />
-    </div>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        position: "relative",
+        color: theme.palette.font.primary,
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          py: 1,
+          width: "100%",
+          background: theme.palette.primary.main,
+          px: "15px",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Box>
+          <Typography variant="h4">Hello</Typography>
+        </Box>
+        <SellerPanelSideBar />
+      </Box>
+      <Box
+        sx={{
+          px: "15px",
+          py: 2,
+        }}
+      >
+        {children}
+      </Box>
+    </Box>
   );
 };
 

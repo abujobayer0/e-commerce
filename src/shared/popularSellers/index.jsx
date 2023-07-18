@@ -23,13 +23,14 @@ const PopularSellers = () => {
         sx={{
           display: "grid",
           gridTemplateColumns: {
-            xl: "repeat(5, 1fr)",
-            lg: "repeat(4, 1fr)",
-            md: "repeat(3, 1fr)",
-            xs: "repeat(2, 1fr)",
+            xl: "repeat(5, 300px)",
+            lg: "repeat(4, 300px)",
+            md: "repeat(3, 300px)",
+            sm: "repeat(2, 300px)",
+            xs: "repeat(2, 200px)",
           },
-          gridAutoRows: "1fr",
-          gap: 2,
+
+          gap: { xs: 1, sm: 2 },
           width: "100%",
           justifyItems: "center",
           alignItems: "center",

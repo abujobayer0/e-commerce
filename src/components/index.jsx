@@ -8,7 +8,9 @@ import Head from "./head";
 import SecondaryButton from "./secondaryButton";
 import PopularShops from "./popularShops";
 import SellerPanelSideBar from "./sellerPanelSideBar";
+import SellerProductAdd from "./sellerProductAdd";
 export {
+  SellerProductAdd,
   TrendingProductCard,
   PopularShops,
   SellerPanelSideBar,
